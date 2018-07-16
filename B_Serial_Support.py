@@ -7,7 +7,10 @@ ser = serial.Serial(None, 9600)
 
 def initialize(Comm_P, Baud_Rate):
     global ser
+    # Linux COMM Addressing setting
     # ser = serial.Serial("/dev/ttyUSB0", Baud_Rate, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE, None)
+
+    # Windows COMM Addressing setting
     ser = serial.Serial(Comm_P, Baud_Rate, serial.EIGHTBITS, serial.PARITY_NONE, serial.STOPBITS_ONE, None)
     return ser
 

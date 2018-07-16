@@ -40,6 +40,7 @@ class Serial_Listener_Server(threading.Thread):
             print "[C_Serial_Server] Packet_Receive_Interface DATA = ", data_R  # Printing received data
             # Processing data end here
 
+
 if __name__ == '__main__':
     S_TS = Serial_Listener_Server("COM12", 9600)
     S_TS.start()

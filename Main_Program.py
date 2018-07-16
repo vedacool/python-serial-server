@@ -6,5 +6,5 @@ S_TS.start()
 
 time.sleep(2)
 while 1:
-    # Do something
+    # Do something here
     time.sleep(1)
